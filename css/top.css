@@ -1,0 +1,240 @@
+@charset "UTF-8";
+.line {
+  transition: all 0.3s ease 0s;
+}
+.line:hover {
+	opacity: 0.6;
+}
+/*-------------------------------------------
+Mainvisual
+-------------------------------------------*/
+#mainvisual {
+  margin-bottom: 80px;
+}
+#mainvisual img {
+  width: 100%;
+  max-width: 1920px;
+  height: 420px;
+  object-fit: cover;
+}
+
+/*-------------------------------------------
+service
+-------------------------------------------*/
+#service{
+  margin-bottom: 130px;
+}
+
+#service ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#service li{
+  width: 31%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#service h3{
+  font-size: 1.18rem;
+  font-weight: 500;
+}
+
+#service p{
+  font-size: 0.8rem;
+  width: 80%;
+}
+#service .left-p{
+  text-align: start;
+}
+#service li img{
+  height: 150px;
+  width: 150px;
+}
+
+bgimg{
+  background-image: ./img/dashboard.jpg;
+}
+/*-------------------------------------------
+Works
+-------------------------------------------*/
+#works {
+  margin-bottom: 130px;
+}
+#works ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+#works li{
+  height: 220px;
+}
+
+#works li img{
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.panel div {
+  width: 31%;
+  margin-bottom: 23px;
+}
+/*--------------------------------------
+  tab
+--------------------------------------*/
+.tab-wrap{
+  margin-bottom: 40px;
+}
+.tab-group{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  margin: 0 auto 60px;
+}
+.tab{
+  width: 30%;
+  flex-grow: 1;
+  background: #333; /* タブのカラー */
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.1rem;
+  margin: 0 5px;
+  padding: 5px 0 5px;
+  text-align: center;
+  transition: 1s;
+  vertical-align: bottom;
+}
+.panel-group{
+  min-height:100px;
+}
+.panel{
+  display:none;
+}
+.tab.is-active{
+  color:#FFF;
+  transition: 1s;
+  opacity: 0.6;
+}
+.panel.is-show{
+  display:block;
+  animation: fadeIn 1.2s ease 0s 1 normal;
+}
+
+@keyframes fadeIn { /*animation-nameで設定した値を書く*/
+
+  0% {opacity: 0} /*アニメーション開始時は不透明度0%*/
+
+  100% {opacity: 1} /*アニメーション終了時は不透明度100%*/
+
+}
+
+
+/*-------------------------------------------
+Blog
+-------------------------------------------*/
+#blog {
+  margin-bottom: 10px;
+}
+#blog ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+#blog li{
+  height: 220px;
+}
+
+#blog li img{
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+#blog div {
+  width: 31%;
+  margin-bottom: 23px;
+}
+
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width: 600px) {
+    /*-------------------------------------------
+  service
+  -------------------------------------------*/
+  #service{
+    margin-bottom: 40px;
+  }
+  
+  #service ul {
+    flex-direction: column;
+  }
+
+  #service li{
+    width: 100%;
+    margin-bottom: 65px;
+  }
+  
+  
+  /*-------------------------------------------
+  Works
+  -------------------------------------------*/
+  #works{
+    margin-bottom: 100px;
+  }
+  
+  #works ul {
+    flex-direction: column;
+  }
+  #works li {
+    height: 200px;
+    width: 100%;
+  }
+  .panel div {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 35px;
+  }
+  #works li img{
+    width: 100%;
+    height: 198px;
+    object-fit: cover;
+  }
+
+  .tab-group{
+    width: 100%;
+  }
+
+  /*-------------------------------------------
+  News
+  -------------------------------------------*/
+  #blog ul {
+    flex-direction: column;
+  }
+  #blog li {
+    width: 100%;
+  }
+  #blog div {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 35px;
+  }
+  #blog li img{
+    width: 100%;
+    height: 198px;
+    object-fit: cover;
+  }
+  
+}

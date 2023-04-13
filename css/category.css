@@ -1,0 +1,163 @@
+@charset "UTF-8";
+.pagenation{
+  text-align: center;
+}
+
+.pagenation a {
+	transition: all 0.3s ease 0s;
+}
+
+.pagenation a:hover {
+	opacity: 0.6;
+}
+
+.pagenation a.next,
+.pagenation a.prev {
+	font-size: 17px;
+}
+
+.pagenation a.next:hover,
+.pagenation a.prev:hover {
+	opacity: 0.6;
+}
+
+.page-numbers{
+  margin-right: 10px;
+}
+
+/*-------------------------------------------
+Works
+-------------------------------------------*/
+
+
+#works .list {
+  max-width: 1100px;
+  margin: 0 auto 80px;
+  font-family: 'Noto Sans JP',sans-serif ;
+}
+#works .list .title {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+#works .list .content p {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+#works .list li {
+  margin-bottom: 140px;
+}
+#works .list li:last-child {
+  margin-bottom: 0;
+}
+#works .list li img {
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+.tab-group{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  margin: 0 auto 40px;
+}
+.tab{
+  width: 30%;
+  flex-grow: 1;
+  background: #333; /* タブのカラー */
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.1rem;
+  margin: 0 5px;
+  padding: 5px 0 5px;
+  text-align: center;
+  transition: 1s;
+  vertical-align: bottom;
+}
+
+.tab a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  color: #fff;
+}
+.tab.active{
+  color:#FFF;
+  transition: 1s;
+  opacity: 0.6;
+}
+/*-------------------------------------------
+blog
+-------------------------------------------*/
+#blog .list {
+  max-width: 1100px;
+  margin: 0 auto 80px;
+  font-family: 'Noto Sans JP',sans-serif ;
+}
+#blog .list .title {
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+#blog .list .content p {
+  margin-bottom: 10px;
+}
+#blog .list li {
+  margin-bottom: 140px;
+}
+#blog .list li:last-child {
+  margin-bottom: 0;
+}
+#blog .list li img {
+  margin-bottom: 30px;
+  object-fit: cover;
+}
+.flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width: 600px) {
+  /*-------------------------------------------
+  Works
+  -------------------------------------------*/
+  #works .list .title{
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  
+  #works .list li {
+    margin-bottom: 60px;
+  }
+  #works .list li img {
+    margin-bottom: 10px;
+  }
+  .tab-group{
+    width: 100%;
+  }
+
+
+  /*-------------------------------------------
+  News
+  -------------------------------------------*/
+  #blog .list .title{
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  #blog .list li {
+    margin-bottom: 60px;
+  }
+  #blog .list li img {
+    margin-bottom: 20px;
+  }
+}
+
+
